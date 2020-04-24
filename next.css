@@ -1,5 +1,7 @@
 :root {
-    --highlight-color: #008B8B;
+    --highlight-color: rgb(0, 160, 160);
+    --text-color: #333;
+    --headings-color: #262a30;
 }
 
 @font-face {
@@ -180,7 +182,7 @@
 html,
 body,
 #write {
-    color: #262a30;
+    color: var(--text-color);
     background: #fcfcfc;
     font-family: Overpass, "GlowSansSC", "Helvetica Neue", "pingfang sc", "microsoft yahei", sans-serif;
     font-weight: 400;
@@ -194,7 +196,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #262a30;
+    color: var(--headings-color);
     font-family: Overpass, pingfang sc, microsoft yahei, sans-serif;
     font-weight: 700;
     line-height: 1.5;
@@ -203,6 +205,8 @@ h6 {
 
 .CodeMirror pre {
     font-family: 'JetBrains Mono';
+    font-size: 0.9em;
+    line-height: 1.5em;
 }
 
 html {
@@ -215,11 +219,11 @@ html {
 }
 
 #write>h1:first-child {
-    margin-top: 2.75rem;
+    margin-top: 1.75rem;
 }
 
 #write>h2:first-child {
-    margin-top: 1.75rem;
+    margin-top: 1.5rem;
 }
 
 #write>h3:first-child {
@@ -260,10 +264,15 @@ h6 {
 }
 
 p {
-    color: #333;
+    color: var(--text-color);
     font-size: 1rem;
     line-height: 1.75rem;
     margin: 0 0 5px;
+}
+
+u {
+    text-decoration: none;
+    border-bottom: 1px solid #999;
 }
 
 #write>h3.md-focus:before {
@@ -411,7 +420,12 @@ code,
     top: 3px;
 }
 
-.task-list-item input:before {
+.task-list-item input {
+    outline: none;
+    margin-bottom: 0.5em;
+}
+
+.task-list-item input::before {
     content: "";
     display: inline-block;
     width: 1rem;
@@ -420,17 +434,18 @@ code,
     text-align: center;
     border: 1px solid gray;
     background-color: #fdfdfd;
-    margin-left: 0;
-    margin-top: -0.75rem;
+    margin-left: -0.1rem;
+    margin-right: 0.1rem;
+    margin-top: -0.9rem;
 }
 
-.task-list-item input:checked:before,
-.task-list-item input[checked]:before {
-    content: '\25FC';
+.task-list-item input:checked::before {
+    padding-left: 0.125em;
+    content: '✔';
     /*◘*/
     font-size: 0.8125rem;
     line-height: 0.9375rem;
-    margin-top: -0.75rem;
+    margin-top: -0.9rem;
 }
 
 
@@ -450,6 +465,8 @@ blockquote {
     border-left: 4px solid #ddd;
     color: #666;
     margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
     padding: 0 15px
 }
 
@@ -571,7 +588,7 @@ p.mathjax-block,
 
 .md-toc {
     margin-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 .sidebar-tabs {
@@ -631,4 +648,57 @@ p.mathjax-block,
     padding-top: 5px;
     padding-bottom: 5px;
     cursor: pointer;
+}
+
+
+/* .modal-footer .btn-default,
+.modal-footer .btn-primary {
+    border: 2px solid #222;
+} */
+
+
+/* 
+#md-searchpanel .btn:not(.close-btn):hover {
+    background: #fff;
+    border-color: #222;
+    color: #222;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#md-searchpanel .btn:not(.close-btn) {
+    background: #222;
+    border-color: #222;
+    color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    transition-duration: .2s;
+}
+
+.searchpanel-search-option-btn {
+    border-radius: 0px;
+    border: 1px solid #222;
+} */
+
+.modal-dialog .btn {
+    background: #222;
+    border: 2px solid #222;
+    border-radius: 0;
+    color: #fff;
+    display: inline-block;
+    font-size: .875em;
+    line-height: 2;
+    padding: 0 20px;
+    margin: 5px;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-delay: 0s;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out
+}
+
+.modal-dialog .btn:hover {
+    background: #fff;
+    border-color: #222;
+    color: #222;
 }
