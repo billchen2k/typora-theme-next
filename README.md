@@ -2,13 +2,16 @@
 
 ![image-20200423021248443](https://billc.oss-cn-shanghai.aliyuncs.com/img/2020-04-23-image-20200423021248443.png)
 
-<p align="center">🖋 An elegant and simple Typora theme, inpired by Hexo theme <img src="https://raw.githubusercontent.com/theme-next/hexo-theme-next/master/source/images/logo.svg" width="30px"> <a href = 'https://github.com/theme-next/hexo-theme-next'>NexT</a>.</p>
+<p align="center">🖋 An elegant and simple Typora theme, inpired by Hexo theme <a href = 'https://github.com/theme-next/hexo-theme-next'>NexT</a>.
+    <br /><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/BillChen2K/typora-theme-next/total?style=flat">
+
+
 
 
 
 ## Features
 
-English 🇺🇸 & 中文 🇨🇳 supported, `JetBrains Mono` as mono font.
+English 🇺🇸 & 中文 🇨🇳 supported, `JetBrains Mono` as mono font. 
 
 
 
@@ -16,7 +19,7 @@ NexT is one of the most powerful and elegant themes for hexo. This is a transpla
 
 
 
-This theme includes styles for typos, underline, checkbox and sidebar, and a Helvetica version for fans of this classic fonts.
+This theme includes styles for typos, underline, checkbox and sidebar, and a Helvetica version for fans of classic fonts.
 
 ## Usage
 
@@ -32,7 +35,7 @@ Inline styles support **strong**, *Emphasis*, `code`, <u>underline</u>, ~~strike
   
   - 中文字体排版效果是什么样子？要解决这个问题，首先需要随便准备一些简体汉字，然后把他们放在这里，再啰嗦几句。
 - And an elegant English font: Overpass.
-- [x] Everybody loves `JetBrains Mono`.
+- Everybody loves `JetBrains Mono`.
 - [x] Check box supported.
 
 ```c
