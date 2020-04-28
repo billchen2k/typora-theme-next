@@ -3,7 +3,8 @@
 ![image-20200423021248443](https://billc.oss-cn-shanghai.aliyuncs.com/img/2020-04-23-image-20200423021248443.png)
 
 <p align="center">🖋 An elegant and simple Typora theme, inpired by Hexo theme <a href = 'https://github.com/theme-next/hexo-theme-next'>NexT</a>.
-    <br /><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/BillChen2K/typora-theme-next/total?style=flat">
+    <br /><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/BillChen2K/typora-theme-next/total?style=flat">  <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/BillChen2K/typora-theme-next"></p>
+
 
 
 
@@ -47,7 +48,7 @@ int main(){
 
 ## Notes
 
-> Glow Sans Font would look better on HiDPI screens. If you don’t have one and had a bad experience, you can delete Glow Sans font under the `next` folder and it will use your Microsoft YaHei or PingFang to render Chinese. 
+> Glow Sans font would look better on HiDPI screens. If you don’t have one and had a bad experience, you can delete Glow Sans font under the `next` folder and it will use your Microsoft YaHei or PingFang to render Chinese. 
 
 Author: Bill Chen ([https://billc.io](https://billc.io)) ⛵️
 

@@ -48,7 +48,7 @@
 
 @font-face {
     font-family: 'JetBrains Mono';
-    src: url('next/JetBrainsMono-Regular.eot') format('embedded-opentype'), url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'), url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff/JetBrainsMono-Regular.woff') format('woff'), url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+    src: url('next/JetBrainsMono-Regular.eot') format('embedded-opentype'), url('next/JetBrainsMono-Regular.woff2') format('woff2'), url('next/JetBrainsMono-Regular.woff') format('woff'), url('next/JetBrainsMono-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -426,6 +426,7 @@ code,
     overflow-wrap: break-word;
     word-wrap: break-word;
     font-family: 'JetBrains Mono';
+    font-size: 0.935em;
 }
 
 .md-fences {
@@ -473,7 +474,7 @@ code,
     /*◘*/
     font-size: 0.8125rem;
     line-height: 0.9375rem;
-    margin-top: -0.9rem;
+    margin-top: -0.5rem;
 }
 
 
