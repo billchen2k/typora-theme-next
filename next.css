@@ -2,6 +2,7 @@
     --highlight-color: rgb(0, 160, 160);
     --text-color: #333;
     --headings-color: #262a30;
+    --export-font-size: 13px;
 }
 
 @font-face {
@@ -183,11 +184,13 @@ html,
 body,
 #write {
     color: var(--text-color);
+    font-size: 16px;
     background: #fcfcfc;
     font-family: Overpass, "GlowSansSC", "Helvetica Neue", "pingfang sc", "microsoft yahei", sans-serif;
     font-weight: 400;
     line-height: 1.15;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
+    /* letter-spacing: -0.5px; */
 }
 
 h1,
@@ -207,10 +210,6 @@ h6 {
     font-family: 'JetBrains Mono';
     font-size: 0.95em;
     line-height: 1.65em;
-}
-
-html {
-    font-size: 16px;
 }
 
 #write {
@@ -263,11 +262,19 @@ h6 {
     color: var(--highlight-color);
 }
 
-p {
+#write p {
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.75rem;
     margin: 0 0 5px;
+}
+
+#write ul {
+    line-height: 2rem;
+}
+
+#write ol li {
+    text-indent: 0.5rem;
 }
 
 u {
@@ -305,7 +312,7 @@ u {
         margin-right: 0;
         padding: 0.5em;
     }
-    .h1,
+    /* .h1,
     h1 {
         font-size: 2.827rem;
     }
@@ -328,7 +335,7 @@ u {
     .h6,
     h6 {
         font-size: 1rem;
-    }
+    } */
 }
 
 a .md-def-url {
@@ -702,4 +709,33 @@ p.mathjax-block,
     background: #fff;
     border-color: #222;
     color: #222;
+}
+
+
+/* Printing issue */
+
+.typora-export * {
+    -webkit-print-color-adjust: exact;
+}
+
+.typora-export p {
+    font-size: var(--export-font-size) !important;
+}
+
+.typora-export li {
+    font-size: var(--export-font-size);
+    line-height: 2rem;
+}
+
+.typora-export #write {
+    font-size: var(--export-font-size) !important;
+}
+
+table,
+pre {
+    page-break-inside: avoid;
+}
+
+pre {
+    word-wrap: break-word;
 }

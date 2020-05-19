@@ -2,6 +2,7 @@
     --highlight-color: rgb(0, 160, 160);
     --text-color: #333;
     --headings-color: #262a30;
+    --export-font-size: 13px;
 }
 
 @font-face {
@@ -333,7 +334,7 @@ u {
         margin-right: 0;
         padding: 0.5em;
     }
-    .h1,
+    /* .h1,
     h1 {
         font-size: 2.827rem;
     }
@@ -356,7 +357,7 @@ u {
     .h6,
     h6 {
         font-size: 1rem;
-    }
+    } */
 }
 
 a .md-def-url {
@@ -426,7 +427,6 @@ code,
     overflow-wrap: break-word;
     word-wrap: break-word;
     font-family: 'JetBrains Mono';
-    font-size: 0.935em;
 }
 
 .md-fences {
@@ -730,4 +730,33 @@ p.mathjax-block,
     background: #fff;
     border-color: #222;
     color: #222;
+}
+
+
+/* Printing issue */
+
+.typora-export * {
+    -webkit-print-color-adjust: exact;
+}
+
+.typora-export p {
+    font-size: var(--export-font-size) !important;
+}
+
+.typora-export li {
+    font-size: var(--export-font-size);
+    line-height: 2rem;
+}
+
+.typora-export #write {
+    font-size: var(--export-font-size) !important;
+}
+
+table,
+pre {
+    page-break-inside: avoid;
+}
+
+pre {
+    word-wrap: break-word;
 }
