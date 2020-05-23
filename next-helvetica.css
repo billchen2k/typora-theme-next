@@ -5,6 +5,9 @@
     --export-font-size: 13px;
 }
 
+
+/* Helvetica Neue */
+
 @font-face {
     font-family: "HelveticaN";
     font-weight: 400;
@@ -264,7 +267,7 @@ html {
 }
 
 h1 {
-    font-size: 2.75em
+    font-size: 2.5em
 }
 
 h2 {
@@ -295,8 +298,20 @@ h6 {
 p {
     color: var(--text-color);
     font-size: 1rem;
-    line-height: 1.75rem;
-    margin: 0 0 5px;
+    line-height: 1.55rem;
+    margin: 0 0 10px;
+}
+
+#write ul {
+    line-height: 1.55rem;
+    margin-block-start: 0.6em;
+    margin-block-end: 0.6em;
+}
+
+#write ol li {
+    line-height: 1.55rem;
+    margin-block-start: 0.6em;
+    margin-block-end: 0.6em;
 }
 
 u {

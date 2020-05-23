@@ -234,7 +234,7 @@ h6 {
 }
 
 h1 {
-    font-size: 2.75em
+    font-size: 2.5em
 }
 
 h2 {
@@ -270,11 +270,15 @@ h6 {
 }
 
 #write ul {
-    line-height: 2rem;
+    line-height: 1.75rem;
+    margin-block-start: 0.6em;
+    margin-block-end: 0.6em;
 }
 
 #write ol li {
-    text-indent: 0.5rem;
+    line-height: 1.75rem;
+    margin-block-start: 0.6em;
+    margin-block-end: 0.6em;
 }
 
 u {
