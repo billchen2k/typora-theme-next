@@ -14,11 +14,7 @@
 
 English 🇺🇸 & 中文 🇨🇳 supported, `JetBrains Mono` as mono font. 
 
-
-
-NexT is one of the most powerful and elegant themes for hexo. This is a transplanted version of NexT on Typora, with English font `Overpass` and Chinese font `Glow Sans` (未来荧黑)，a modern and concise Chinese font by Zhejiang University. 
-
-
+NexT is one of the most powerful and elegant themes for hexo. This is a transplanted version of NexT on Typora, with English font `Overpass` and Chinese font `Glow Sans` ([未来荧黑](https://github.com/welai/glow-sans))，a modern and concise Chinese font by Zhejiang University.
 
 This theme includes styles for typos, underline, checkbox and sidebar, and a Helvetica version for fans of classic fonts.
 
@@ -26,7 +22,11 @@ This theme includes styles for typos, underline, checkbox and sidebar, and a Hel
 
 Drag <u>next.css & next folder</u> to your Typora theme folder and restart Typora.
 
-For fans of Helvetica font, there's a next-helvetica.css, **all Helvetica.**
+For fans of Helvetica font, there's a next-helvetica.css, **all Helvetica.** Note that Helvetica version’s line height is slightly smaller for better appearance.
+
+If you want code [ligatures](https://www.jetbrains.com/lp/mono/) in JetBrains Mono, just find  `font-variant-ligatures: none;` in the css files and comment that line.
+
+If you want to change the font size of exported files (like pdf or docx), edit `export-font-size` variable in the css fils.
 
 ## Example
 

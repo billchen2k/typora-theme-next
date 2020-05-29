@@ -1,4 +1,16 @@
+/**
+ * NexT for Typora
+ * Brought to you by Bill Chen || https://github.com/BillChen2K/typora-theme-next
+ *
+ * - Want code ligatures for JetBrains Mono?
+ * - Search for `font-variant-ligatures: none;` and comment that line.
+ *
+ * - Want to change the font size in exported pdf?
+ * - Change the variable `--export-font-size` below.
+ **/
+
 :root {
+    --base-font-size: 16px;
     --highlight-color: rgb(0, 160, 160);
     --text-color: #333;
     --headings-color: #262a30;
@@ -184,7 +196,7 @@ html,
 body,
 #write {
     color: var(--text-color);
-    font-size: 16px;
+    font-size: var(--base-font-size);
     background: #fcfcfc;
     font-family: Overpass, "GlowSansSC", "Helvetica Neue", "pingfang sc", "microsoft yahei", sans-serif;
     font-weight: 400;
@@ -264,9 +276,8 @@ h6 {
 
 #write p {
     color: var(--text-color);
-    font-size: 16px;
     line-height: 1.75rem;
-    margin: 0 0 5px;
+    margin: 0 0 7.5px;
 }
 
 #write ul {
