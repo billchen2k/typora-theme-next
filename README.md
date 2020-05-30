@@ -4,6 +4,7 @@
 
 <p align="center">🖋 An elegant and simple Typora theme, inpired by Hexo theme <a href = 'https://github.com/theme-next/hexo-theme-next'>NexT</a>.
     <br /><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/BillChen2K/typora-theme-next/total?style=flat">  <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/BillChen2K/typora-theme-next"></p>
+
 ## Features
 
 English 🇺🇸 & 中文 🇨🇳 supported, `JetBrains Mono` as mono font. 
