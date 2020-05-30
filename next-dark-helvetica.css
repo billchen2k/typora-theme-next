@@ -9,7 +9,7 @@
  * - Change `@import "next.css" into "next-dark.css" below.
  **/
 
-@import "next.css";
+@import "next-dark.css";
 * {
     /* Disable ligatures */
     font-variant-ligatures: none;

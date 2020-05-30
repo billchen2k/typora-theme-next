@@ -4,29 +4,25 @@
 
 <p align="center">🖋 An elegant and simple Typora theme, inpired by Hexo theme <a href = 'https://github.com/theme-next/hexo-theme-next'>NexT</a>.
     <br /><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/BillChen2K/typora-theme-next/total?style=flat">  <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/BillChen2K/typora-theme-next"></p>
-
-
-
-
-
-
 ## Features
 
 English 🇺🇸 & 中文 🇨🇳 supported, `JetBrains Mono` as mono font. 
 
 NexT is one of the most powerful and elegant themes for hexo. This is a transplanted version of NexT on Typora, with English font `Overpass` and Chinese font `Glow Sans` ([未来荧黑](https://github.com/welai/glow-sans))，a modern and concise Chinese font by Zhejiang University.
 
-This theme includes styles for typos, underline, checkbox and sidebar, and a Helvetica version for fans of classic fonts.
+This theme includes styles for typos, underline, checkbox and sidebar, and a Helvetica version for fans of classic fonts. Tuned for both macOS and Windows, and now with a dark version:
+
+![image-20200529142243531](https://billc.oss-cn-shanghai.aliyuncs.com/img/2020-05-29-yvVEHP.png)
 
 ## Usage
 
-Drag <u>next.css & next folder</u> to your Typora theme folder and restart Typora.
+There will be four css files, drag whichever css file you like <u>& next folder</u> to your Typora theme folder and restart Typora.
 
-For fans of Helvetica font, there's a next-helvetica.css, **all Helvetica.** Note that Helvetica version’s line height is slightly smaller for better appearance.
+Helvetica font would look more constraint and academic. For fans of Helvetica, both light and dark theme have a Helvetica version. Note that line height in Helvetica version is slightly tightened for better appearance.
 
-If you want code [ligatures](https://www.jetbrains.com/lp/mono/) in JetBrains Mono, just find  `font-variant-ligatures: none;` in the css files and comment that line.
+Code [ligatures](https://www.jetbrains.com/lp/mono/)  in JetBrains Mono are disabled by default. If you want it on, just find  `font-variant-ligatures: none;` in the css files and comment that line.
 
-If you want to change the font size of exported files (like pdf or docx), edit `export-font-size` variable in the css fils.
+If you want to change the font size of exported files (like pdf or docx), edit `export-font-size` variable in the css files.
 
 ## Example
 
@@ -37,7 +33,7 @@ Inline styles support **strong**, *Emphasis*, `code`, <u>underline</u>, ~~strike
   - 中文字体排版效果是什么样子？要解决这个问题，首先需要随便准备一些简体汉字，然后把他们放在这里，再啰嗦几句。
 - And an elegant English font: Overpass.
 - Everybody loves `JetBrains Mono`.
-- [x] Check box supported.
+- [x] Check box styled.
 
 ```c
 #include <iostream>
@@ -45,6 +41,10 @@ int main(){
   std::cout << "Hello World!" << end;
 }
 ```
+
+| Table | Style | Of   | NexT |
+| ----- | ----- | ---- | ---- |
+| Is    | Shown | Here | .    |
 
 ## Notes
 
