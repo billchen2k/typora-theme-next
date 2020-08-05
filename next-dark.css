@@ -1,4 +1,4 @@
-    /**
+/**
  * NexT for Typora
  * Brought to you by Bill Chen || https://github.com/BillChen2K/typora-theme-next
  *
@@ -171,6 +171,11 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
     color: #ff9090
 }
 
+.CodeMirror div.CodeMirror-cursor{
+    border-left: 1px solid var(--text-color);
+    z-index: 3;
+}
+
 .cm-s-typora-default .cm-code, .cm-s-typora-default .cm-comment{
     color: #8398f1;
 }
@@ -178,7 +183,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .cm-s-typora-default .CodeMirror-activeline-background {
 
     background-color: var(--bg-highlight);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.06), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 -1px 0.5px 0 rgba(0, 0, 0, 0.09);
+    /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.06), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 -1px 0.5px 0 rgba(0, 0, 0, 0.09); */
 }
 
 @font-face {
@@ -587,6 +592,7 @@ code,
     word-wrap: break-word;
     font-family: 'JetBrains Mono';
     font-size: 0.935em;
+    caret-color: var(--text-color);
 }
 
 
@@ -597,7 +603,10 @@ code,
     font-size: 0.9em;
     line-height: 1.5em;
     padding: 0.4em 1em;
+    color: var(--text-color);
+
     padding-top: 0.4em;
+    caret-color: var(--text-color);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.06), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 -1px 0.5px 0 rgba(0, 0, 0, 0.09);
 }
 

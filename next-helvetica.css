@@ -4,9 +4,6 @@
  *
  * - Want code ligatures for JetBrains Mono?
  * - Search for `font-variant-ligatures: none;` and comment that line.
- *
- * - Dark version of Next Helvetica?
- * - Change `@import "next.css" into "next-dark.css" below.
  **/
 
 @import "next.css";
